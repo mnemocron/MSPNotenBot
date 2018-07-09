@@ -41,5 +41,5 @@ def callback_send_file(path, rule):
 	message = message.replace('"', '\\"').encode('utf-8')
 
 	print message
-	os.system('telegram-bot -u ' + rule['telegram'] +  ' -t \"' + message + '\"')
+	os.system('telegram-bot -u \"' + rule['telegram'] +  '\"" -t \"' + message + '\"')
 
