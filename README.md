@@ -18,7 +18,7 @@ python msp-check.py -i E1811_Info_HT\2-MSP Prüfungsergebnisse -s known.txt -r r
 
 ### Todo:
 
-- öffnen der PDF's und mit Matrikelnummer Rules eine Personenspezifische auswertung machen
+- Durch lesen der PDF's und mit Matrikelnummer Rules eine personenspezifische Auswertung machen -> PM in Telegram
 
 
 
