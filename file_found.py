@@ -2,9 +2,9 @@
 #_*_ coding: utf-8 _*_
 
 '''
-@file 	
-@author 
-@date 	
+@file 	file_found.py
+@author github.com/mnemocron
+@date 	2018-07-09
 '''
 
 try:
@@ -35,7 +35,8 @@ def callback_send_file(path, rule):
 
 	message = str('Neue MSP Noten hochgeladen:\n'
 	+ 'Klasse : ' + rule['klasse'] + '\n'
-	+ 'Modul : ' + rule['modul'] + '\n')
+	+ 'Modul : ' + rule['modul'] + '\n'
+	+ 'Datei : ' + path)
 	
 	message = message.replace('"', '\\"').encode('utf-8')
 
