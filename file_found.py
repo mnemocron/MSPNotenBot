@@ -42,4 +42,8 @@ def callback_send_file(path, rule):
 
 	print message
 	os.system('telegram-bot -u \"' + rule['telegram'] +  '\"" -t \"' + message + '\"')
+	
+	if('YOUR NAME' in rule['telegram']):
+		os.system('echo -e \"Subject: Neue MSP Noten hochgeladen\n' + message + '\n\nLiebe Gruess\nRasPi von Simon\" | ssmtp somebody@recipent.com')
+		
 
